@@ -4,9 +4,9 @@ PRODID:-//Innovation Tech Community//Agentic AI Summit 2026//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:agentic-ai-summit-2026@innovationtechcommunity.com
-DTSTAMP:20261019T192319Z
+DTSTAMP:20261020T185639Z
 DTSTART:20261024T033000Z
-DTEND:20261024T113000Z
+DTEND:20261024T104000Z
 SUMMARY:Agentic AI Summit 2026
 DESCRIPTION:Free virtual summit on Agentic AI by Innovation Tech Community. Watch live: https://www.youtube.com/watch?v=bTTSVoPeRVc · Event page: https://innovationtechcommunity.com/events/agentic-ai-summit-2026
 LOCATION:Online · https://www.youtube.com/watch?v=bTTSVoPeRVc
@@ -14,7 +14,7 @@ URL:https://innovationtechcommunity.com/events/agentic-ai-summit-2026
 END:VEVENT
 BEGIN:VEVENT
 UID:session-c3b72953-c3d8-4368-a9c3-be9c38e14c50@innovationtechcommunity.com
-DTSTAMP:20261019T192319Z
+DTSTAMP:20261020T185639Z
 DTSTART:20261024T033000Z
 DTEND:20261024T041500Z
 SUMMARY:Build a Secure Multi-Tool AI Agent with Microsoft Foundry\, APIs\, and MCP — Nanddeep Nachan & Smita Nachan
@@ -23,7 +23,7 @@ LOCATION:https://www.youtube.com/watch?v=bTTSVoPeRVc
 END:VEVENT
 BEGIN:VEVENT
 UID:session-30889b60-0a11-42af-8295-ed6b86b4e015@innovationtechcommunity.com
-DTSTAMP:20261019T192319Z
+DTSTAMP:20261020T185639Z
 DTSTART:20261024T041500Z
 DTEND:20261024T045000Z
 SUMMARY:Build Your First AI Assistant: From Idea to Working Demo — Divya Akula
@@ -32,7 +32,7 @@ LOCATION:https://www.youtube.com/watch?v=bTTSVoPeRVc
 END:VEVENT
 BEGIN:VEVENT
 UID:session-5ba183a6-38ac-407b-bcfe-d6521060a99b@innovationtechcommunity.com
-DTSTAMP:20261019T192319Z
+DTSTAMP:20261020T185639Z
 DTSTART:20261024T045000Z
 DTEND:20261024T052500Z
 SUMMARY:From Copilots to Autonomous Agents: Building Agentic AI with Microsoft Foundry — Prathap Reddy
@@ -41,7 +41,7 @@ LOCATION:https://www.youtube.com/watch?v=bTTSVoPeRVc
 END:VEVENT
 BEGIN:VEVENT
 UID:session-b69635a6-3f39-42d1-9049-a4312c66f913@innovationtechcommunity.com
-DTSTAMP:20261019T192319Z
+DTSTAMP:20261020T185639Z
 DTSTART:20261024T052500Z
 DTEND:20261024T060000Z
 SUMMARY:Microsoft Agentic AI: Framework Overview & Live Agent Demos — Frank Falvey
@@ -50,7 +50,7 @@ LOCATION:https://www.youtube.com/watch?v=bTTSVoPeRVc
 END:VEVENT
 BEGIN:VEVENT
 UID:session-fdf65d11-7d1e-42f3-aed2-916aef2a1b59@innovationtechcommunity.com
-DTSTAMP:20261019T192319Z
+DTSTAMP:20261020T185639Z
 DTSTART:20261024T060000Z
 DTEND:20261024T063500Z
 SUMMARY:From Idea to Agent: Building with Microsoft Agent Framework — Vinoth Rajendran
@@ -59,7 +59,7 @@ LOCATION:https://www.youtube.com/watch?v=bTTSVoPeRVc
 END:VEVENT
 BEGIN:VEVENT
 UID:session-82913153-e6d5-40eb-a6e2-ae5c99d17588@innovationtechcommunity.com
-DTSTAMP:20261019T192319Z
+DTSTAMP:20261020T185639Z
 DTSTART:20261024T063500Z
 DTEND:20261024T071000Z
 SUMMARY:Building SnowPilot: Agentic AI in Action with Copilot Studio — Ashutosh Singh
@@ -68,7 +68,7 @@ LOCATION:https://www.youtube.com/watch?v=bTTSVoPeRVc
 END:VEVENT
 BEGIN:VEVENT
 UID:session-5fd1ed34-d985-4657-9110-4490c437d584@innovationtechcommunity.com
-DTSTAMP:20261019T192319Z
+DTSTAMP:20261020T185639Z
 DTSTART:20261024T071000Z
 DTEND:20261024T074500Z
 SUMMARY:AI-Powered IT Operations: Troubleshooting Smarter with MCP and Microsoft Learn — Sujin Nelladath
@@ -77,7 +77,7 @@ LOCATION:https://www.youtube.com/watch?v=bTTSVoPeRVc
 END:VEVENT
 BEGIN:VEVENT
 UID:session-37704e28-7ee8-42c8-81a8-e5e642707f7e@innovationtechcommunity.com
-DTSTAMP:20261019T192319Z
+DTSTAMP:20261020T185639Z
 DTSTART:20261024T074500Z
 DTEND:20261024T082000Z
 SUMMARY:The Zero-Handoff ERP: Architecting a Multi-Agent Workforce — Kritika Mehta
@@ -86,7 +86,7 @@ LOCATION:https://www.youtube.com/watch?v=bTTSVoPeRVc
 END:VEVENT
 BEGIN:VEVENT
 UID:session-6dc18247-2c8c-43b1-bd4b-40fe60e63452@innovationtechcommunity.com
-DTSTAMP:20261019T192319Z
+DTSTAMP:20261020T185639Z
 DTSTART:20261024T082000Z
 DTEND:20261024T085500Z
 SUMMARY:Building with Confidence: Inside Microsoft’s Copilot Managed Runtime — Shantha Kumar T
@@ -95,7 +95,7 @@ LOCATION:https://www.youtube.com/watch?v=bTTSVoPeRVc
 END:VEVENT
 BEGIN:VEVENT
 UID:session-375d8445-f3b4-4d7c-affe-8af2dc74bd27@innovationtechcommunity.com
-DTSTAMP:20261019T192319Z
+DTSTAMP:20261020T185639Z
 DTSTART:20261024T085500Z
 DTEND:20261024T093000Z
 SUMMARY:Agents of Tomorrow: Building the Next Generation of AI with Microsoft Foundry — Janarthanan Selvaraj
@@ -104,11 +104,20 @@ LOCATION:https://www.youtube.com/watch?v=bTTSVoPeRVc
 END:VEVENT
 BEGIN:VEVENT
 UID:session-ef3798d4-99bd-470c-abde-78659f0aadf9@innovationtechcommunity.com
-DTSTAMP:20261019T192319Z
+DTSTAMP:20261020T185639Z
 DTSTART:20261024T093000Z
 DTEND:20261024T100500Z
 SUMMARY:More Than Prompt Safety and IAM : Design Policy-as-Code for Deterministic Multi-Agent AI Workflows — Samik Roy
 DESCRIPTION:Agentic AI Summit 2026 · https://innovationtechcommunity.com/events/agentic-ai-summit-2026#session-ef3798d4-99bd-470c-abde-78659f0aadf9
+LOCATION:https://www.youtube.com/watch?v=bTTSVoPeRVc
+END:VEVENT
+BEGIN:VEVENT
+UID:session-5c3a4248-9f9c-482a-9bdb-accf4ba53247@innovationtechcommunity.com
+DTSTAMP:20261020T185639Z
+DTSTART:20261024T100500Z
+DTEND:20261024T104000Z
+SUMMARY:From AI PoC Chaos to Production: Building a Secure Enterprise AI Landing Zone on Azure — Lalit Rawat
+DESCRIPTION:Agentic AI Summit 2026 · https://innovationtechcommunity.com/events/agentic-ai-summit-2026#session-5c3a4248-9f9c-482a-9bdb-accf4ba53247
 LOCATION:https://www.youtube.com/watch?v=bTTSVoPeRVc
 END:VEVENT
 END:VCALENDAR
