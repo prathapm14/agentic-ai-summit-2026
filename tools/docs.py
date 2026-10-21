@@ -43,12 +43,13 @@ From AI copilots to autonomous agents: expert-led sessions, live demos and real-
 | ▶️ **YouTube live** | {YT} |
 | 💼 **LinkedIn live** | _Add the LinkedIn event link here_ |
 | 📸 **Instagram live** | _Add the Instagram handle here_ |
-| 🎙️ **StreamYard studio** | Shared privately with speakers by email. **Never commit studio or guest links here.** |
+| 🎙️ **StreamYard studio** | One guest link for all speakers, valid all day. Shared privately by email. **Never commit studio or guest links here.** |
+| 💬 **Speakers' WhatsApp group** | Shared privately with speakers by email |
 | 🛂 **Passport stamp** | Registered attendees can claim the Agentic AI Summit 2026 stamp in their ITC Learning Passport |
 
 ## Schedule
 
-All times IST. Each session is 35 minutes (the opening session is 45).
+All times IST. Each slot is **35 minutes: a 30-minute session + 5 minutes of Q&A** (the opening session is 45 minutes).
 
 | Time (IST) | Speaker | Session | Format |
 |---|---|---|---|
@@ -110,7 +111,7 @@ for r in rows:
 ev.append("END:VCALENDAR")
 open(os.path.join(R, "agentic-ai-summit-2026.ics"), "w").write("\r\n".join(ev) + "\r\n")
 
-ros = ["# Run of show · Agentic AI Summit 2026", "", f"Saturday, 24 October 2026 · {fmt(start)} – {fmt(end)} IST. Each 35-minute slot: about **2 min host intro**, **~28 min talk or demo**, **~5 min Q&A** from the chat.", "",
+ros = ["# Run of show · Agentic AI Summit 2026", "", f"Saturday, 24 October 2026 · {fmt(start)} – {fmt(end)} IST. Each 35-minute slot: **30-minute session + 5 minutes of Q&A** from the chat; the host introduces each speaker (about 1–2 minutes) at the start of the slot.", "",
        f"All {people} speakers have confirmed.", "", "## Before the day", "",
        "- [ ] Send every speaker the StreamYard guest link and their slot time **by email** (never post it publicly)", "- [ ] Tech check with each speaker: camera, mic, screen share, slide font size",
        "- [ ] Ask speakers for a recorded backup of any live demo", "- [ ] Schedule the stream in StreamYard for YouTube, LinkedIn and Instagram; paste the LinkedIn and Instagram links into the README",
@@ -119,6 +120,6 @@ ros = ["# Run of show · Agentic AI Summit 2026", "", f"Saturday, 24 October 202
        "| Time (IST) | Who | Host notes |", "|---|---|---|", f"| {fmt(start)} | Host | Welcome, housekeeping, about ITC, agenda (host deck slides 1–5, ~4 min from the first slot) |"]
 ros += [f"| {fmt(r['start'])} – {fmt(r['end'])} | {' & '.join(r['names'])} | Intro slide {r['i'] + 5} · \"{r['s']['title']}\" |" for r in rows]
 ros += [f"| {fmt(end)} | Host | Close: thank speakers and volunteers, passport stamp, YouTube recordings, Agent Universe 2026 (14 Nov) |", "",
-        "## Notes", "", "- Frank Falvey joins from Cork, Ireland: his 10:55 AM IST slot is **6:25 AM** in Ireland.", "- Speaker intro scripts are in the speaker notes of the host deck (about 2 minutes each)."]
+        "## Notes", "", "- Frank Falvey joins from Cork, Ireland: his 3:35 PM IST slot is **11:05 AM** in Ireland.", "- Speaker intro scripts are in the speaker notes of the host deck (about 2 minutes each)."]
 open(os.path.join(R, "run-of-show.md"), "w").write("\n".join(ros) + "\n")
 print(f"docs: {len(rows)} sessions, {people} speakers, {fmt(start)}–{fmt(end)}")

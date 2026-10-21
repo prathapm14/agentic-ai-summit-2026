@@ -32,6 +32,13 @@ const span = (s) => `${time(s.start)} – ${time(new Date(new Date(s.start).getT
 
   const sessions = data.sessions;
   if (sessions.length !== SPEAKERS.length) throw new Error(`speakers.js has ${SPEAKERS.length} entries but there are ${sessions.length} sessions`);
+  // Intros follow the schedule order, matched by the first speaker's first name.
+  const key = (name) => name.trim().split(/\s+/)[0].toLowerCase();
+  const ordered = sessions.map((session) => {
+    const intro = SPEAKERS.find((x) => key(x.people[0].name) === key(session.speakers[0].name));
+    if (!intro) throw new Error(`No intro in speakers.js for ${session.speakers[0].name}`);
+    return intro;
+  });
   const people = SPEAKERS.reduce((n, x) => n + x.people.length, 0);
   const mvps = SPEAKERS.flatMap((x) => x.people).filter((p) => p.chips.some((c) => c.includes("MVP"))).length;
   const dayStart = time(data.event.starts_at), dayEnd = time(data.event.ends_at);
@@ -92,15 +99,14 @@ const span = (s) => `${time(s.start)} – ${time(new Date(new Date(s.start).getT
   s = pres.addSlide({ masterName: "Content", sectionTitle: "Opening" });
   s.addText("Agenda  ·  All times IST", { placeholder: "title" });
   const head = (t) => ({ text: t, options: { bold: true, color: C.background1, fill: { color: C.text2 } } });
-  const rows = [[head("Time"), head("Speaker"), head("Session")], ...sessions.map((x, i) => [span(x), SPEAKERS[i].people.map((p) => p.name).join(" & "), x.title]
+  const rows = [[head("Time"), head("Speaker"), head("Session")], ...sessions.map((x, i) => [span(x), ordered[i].people.map((p) => p.name).join(" & "), x.title]
     .map((t) => ({ text: t, options: { fill: { color: i % 2 ? C.background1 : C.background2 } } })))];
   s.addTable(rows, { x: 0.6, y: 1.4, w: 12.1, colW: [2.1, 3.3, 6.7], rowH: 0.36, fontSize: 11, color: C.text1, fontFace: THEME.bodyFontFace, valign: "middle", border: { type: "solid", pt: 0.5, color: "E4E0F7" }, margin: [0.02, 0.1, 0.02, 0.1] });
   s.addNotes("Walk through the day quickly. Each session is 35 minutes (the opening session is 45). Encourage people to stay for the whole day and to add the stream to their calendar.");
 
   pres.addSection({ title: "Speakers" });
   sessions.forEach((session, i) => {
-    const intro = SPEAKERS[i];
-    if (intro.people[0].name.split(" ")[0].toLowerCase() !== session.speakers[0].name.split(" ")[0].toLowerCase()) throw new Error(`Order mismatch at ${i}: ${intro.people[0].name} vs ${session.speakers[0].name}`);
+    const intro = ordered[i];
     s = pres.addSlide({ masterName: "Speaker intro", sectionTitle: "Speakers" });
     const pair = intro.people.length > 1;
     if (pair) {

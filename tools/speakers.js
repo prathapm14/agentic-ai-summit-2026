@@ -1,4 +1,4 @@
-// Intro content per session, in schedule order, written only from the speakers' own profiles and session submissions.
+// Intro content per session (matched to the schedule by the first speaker's first name), written only from the speakers' own profiles and session submissions.
 module.exports = [
   { people: [
       { name: "Nanddeep Nachan", photo: "nanddeep-nachan", line: "Microsoft MVP · Microsoft Certified Trainer", chips: ["Microsoft MVP", "MCT", "Author"] },
@@ -38,7 +38,7 @@ His session is "From Copilots to Autonomous Agents: Building Agentic AI with Mic
 Please welcome Prathap!` },
   { people: [{ name: "Frank Falvey", photo: "frank-falvey", line: "Microsoft MVP · Microsoft Certified Trainer · Cork, Ireland", chips: ["Microsoft MVP", "MCT"] }],
     highlights: ["Microsoft 365 Copilot specialist with 25+ years across IT, infrastructure, cloud and training", "Host of the Azure and AI Show", "Known for a friendly, hands-on approach that makes complex topics easy"],
-    script: `Our next speaker is joining us all the way from Cork, in Ireland: Frank Falvey. And since it is very early morning in Ireland right now, a special thank you to Frank!
+    script: `Closing our sessions today, and joining us all the way from Cork, in Ireland: Frank Falvey!
 
 Frank is a Microsoft MVP, a Microsoft Certified Trainer and a Microsoft 365 Copilot specialist. He brings more than 25 years of experience across IT, enterprise infrastructure, cloud technologies and technical training, and he is known for his friendly, hands-on approach: making complex topics easy to understand and helping people feel confident with technology.
 
@@ -118,7 +118,7 @@ His session is "More Than Prompt Safety and IAM: Design Policy-as-Code for Deter
 Please welcome Samik!` },
   { people: [{ name: "Lalit Rawat", photo: "lalit-rawat", line: "Microsoft MVP · MCT · CISO, Kanerika", chips: ["Microsoft MVP", "MCT", "CISO"] }],
     highlights: ["Chief Information Security Officer at Kanerika and Distinguished Lead Engineer; 19+ years in Microsoft technologies", "Specialises in Zero Trust, DevSecOps, cloud security, AI governance and enterprise AI architecture", "Helps organisations bridge innovation and security to adopt AI responsibly"],
-    script: `Closing our sessions today is Lalit Rawat, who will take us from AI experiments all the way to production, securely.
+    script: `Our next speaker will take us from AI experiments all the way to production, securely: Lalit Rawat.
 
 Lalit is the Chief Information Security Officer at Kanerika and a Distinguished Lead Engineer, with more than 19 years of experience in Microsoft technologies, enterprise architecture, cloud security and AI-driven innovation. He is a Microsoft MVP and a Microsoft Certified Trainer, and he specialises in secure, scalable, cloud-native solutions on Azure: Zero Trust, DevSecOps, cybersecurity governance, AI security and enterprise AI architecture. His passion is helping organisations bridge the gap between innovation and security, so they can adopt new technology responsibly.
 
