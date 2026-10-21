@@ -1,0 +1,23 @@
+name: Send scheduled mailings
+# Every 10 minutes, asks the community website to send any group mailings that are due
+# (scheduled in Admin › Events › Group mailing › "Send later"). The website does the sending.
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+permissions: {}
+concurrency:
+  group: scheduled-mailings
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Trigger the mailing scheduler
+        env:
+          CRON_SECRET: ${{ secrets.ITC_CRON_SECRET }}
+        run: |
+          status=$(curl -s -m 220 -o response.json -w '%{http_code}' -X POST -H "Authorization: Bearer $CRON_SECRET" https://innovationtechcommunity.com/api/cron/mailings)
+          cat response.json; echo
+          test "$status" = 200

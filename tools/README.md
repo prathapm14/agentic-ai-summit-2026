@@ -17,3 +17,9 @@ The host deck, README, schedule, calendar and run of show are generated from the
    ```
 
 `.cache/` and `node_modules/` are git-ignored: they hold downloaded photos and the data export.
+
+## Scheduled mailings
+
+`.github/workflows/send-scheduled-mailings.yml` runs every 10 minutes and asks the website to send any group mailings that are due
+(Admin › Events › Group mailing › "Send later"). It needs the repository secret `ITC_CRON_SECRET`, which matches `CRON_SECRET` on the website.
+The website sends at most about 90 emails an hour, inside Azure's sending limit. You can also start it by hand from the Actions tab.
